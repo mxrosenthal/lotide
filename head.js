@@ -12,7 +12,7 @@ const assertEqual = function(actual, expected) {
 
 
 const head = function(array) {
-  console.log(array.length);
+  // console.log(array.length);
   if (array.length === 0) {
     return;
   }
