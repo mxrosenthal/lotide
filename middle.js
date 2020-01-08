@@ -35,11 +35,11 @@ const middle = (array)=> {
     middleVal.push(array[middleInd]);
     middleVal.push(array[middleInd + 1]);
   } else if (array.length % 2 !== 0) {
-    middleInd = ((array.length - 1 ) / 2)
+    middleInd = ((array.length - 1) / 2);
     middleVal.push(array[middleInd]);
   }
   return middleVal;
-}
+};
 // console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // console.log(middle([1, 2, 3, 4, 5, 6, 7, 8, 9]));
 // console.log(middle([1, 2, 3]));
