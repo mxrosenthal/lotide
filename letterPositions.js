@@ -38,5 +38,9 @@ const assertArraysEqual = (arr1, arr2)=> {
   }
 };
 
-// console.log(assertArraysEqual((letterPositions('hello')), ))
-console.log(letterPositions('temporary living space.'));
+console.log(assertArraysEqual((letterPositions('hello'))['h'], [0]))
+console.log(assertArraysEqual((letterPositions('hello'))['e'], [1]))
+console.log(assertArraysEqual((letterPositions('hello'))['l'], [2, 3]))
+console.log(assertArraysEqual((letterPositions('hello'))['o'], [4]))
+
+// console.log(letterPositions('temporary living space.'));
