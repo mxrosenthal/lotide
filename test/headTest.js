@@ -1,14 +1,5 @@
 const head = require('../head.js');
-const assertEqual = require('../assertEqual.js');
 const assert = require('chai').assert;
-
-
-
-
-// assertEqual(head([5,6,7]), 5);
-// assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-// assertEqual(head([400]), 400);
-// assertEqual(head([]), undefined);
 
 describe('#head', () => {
 

@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@mxrosenthal/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mini clone of the lodash library. Created in the first week of Lighthouse Labs bootcamp.",
   "main": "",
   "directories": {
     "test": "test"
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/mxrosenthal/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Max Rosenthal",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mxrosenthal/lotide/issues"
