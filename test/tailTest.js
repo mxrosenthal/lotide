@@ -1,7 +1,15 @@
 const tail = require('../tail');
 const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);// no need to capture the return value since we are not checking it
-assertEqual(words.length, 3);// original array should still have 3 elements!
-// assertEqual(tail([15]),[]);
+describe('#tail', () => {
+
+  it('Given array.length <= 1 should return 0', () => {
+    assert.strictEqual(tail([0]).length, 0);
+  });
+
+  it('Given array of length n should return n-1', () => {
+    assert.strictEqual(tail(["Yo Yo", "Lighthouse", "Labs"]).length, 2);
+  });
+
+});
