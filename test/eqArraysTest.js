@@ -1,20 +1,41 @@
 const eqArrays = require('../eqArrays');
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 
+describe('#eqArrays', () => {
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => tr  ue
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
+  it('Given [1, 2, 3], [1, 2, 3] : true', () => {
+    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+  });
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
+  it('Given [1, 2, 3], [3, 2, 1]) : false', () => {
+    assert.deepEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
+  });
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 4]), false);
+  it('Given ["1", "2", "3"], ["1", "2", "3"]) : true)', () => {
+    assert.deepEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
+  });
 
-assertEqual(eqArrays(['1', '2', '3'], ['1', '2', '3']), true);
-assertEqual(eqArrays(['1', '2', '3'], ['1', '2', 3]), false);
+  it('Given ["1", "2", "3"], ["1", "2", 3] : false', () => {
+    assert.deepEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+  });
 
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4]]), true); // => true
+  it('Given [1, 2, 3], [1, 2, 4]), false', () => {
+    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 4]), false);
+  });
 
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false); // => false
-assertEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false); // => false
+  it('Given [\'1\', \'2\', \'3\'], [\'1\', \'2\', \'3\']), true', () => {
+    assert.deepEqual(eqArrays(['1', '2', '3'], ['1', '2', '3']), true);
+  });
+
+  it('Given [\'1\', \'2\', \'3\'], [\'1\', \'2\', 3]), false);', () => {
+    assert.deepEqual(eqArrays(['1', '2', '3'], ['1', '2', 3]), false);
+  });
+
+  it('Given [2, 3], [4]], [[2, 3], [4, 5]]), false', () => {
+    assert.deepEqual(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]]), false);
+  });
+
+  it('Given [[2, 3], [4]], [[2, 3], 4]), false', () => {
+    assert.deepEqual(eqArrays([[2, 3], [4]], [[2, 3], 4]), false);
+  });
+});

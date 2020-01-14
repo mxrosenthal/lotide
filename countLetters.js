@@ -22,5 +22,7 @@ const countLetters = function(sentence) {
   return resultingLetterCount;
 };
 
+module.exports = countLetters;
+
 console.log(countLetters('Believe in yourself!'));
 console.log(countLetters('99999999999999'));

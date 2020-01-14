@@ -36,6 +36,8 @@ const eqArrays = (arr1, arr2)=> {
   return true;
 };
 
+module.exports = takeUntil;
+
 const assertArraysEqual = (arr1, arr2)=> {
   console.log(arr1);
   if (eqArrays(arr1, arr2)) {

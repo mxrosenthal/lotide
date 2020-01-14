@@ -1,6 +1,6 @@
 {
   "name": "@mxrosenthal/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mini clone of the lodash library. Created in the first week of Lighthouse Labs bootcamp.",
   "main": "",
   "directories": {
